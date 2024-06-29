@@ -1,7 +1,11 @@
-import Image from "next/image";
+import React from "react";
+import Signin from "./Component/Signin"; // Adjust the import path based on your project structure
 
-export default function Home() {
+const Page = () => {
   return (
+
+    <div>
+      <Signin />
     <div className="bg-white">
       <header className="flex justify-between items-center py-6 px-8">
         <div className="text-2xl font-bold text-yellow-500">S<span className="text-gray-900">tudio</span>.</div>
@@ -50,5 +54,4 @@ export default function Home() {
       </main>
     </div>
   );
-
 }
