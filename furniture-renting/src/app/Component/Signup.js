@@ -1,34 +1,38 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import "./Signin.css";
 
-const signup = () => {
+const Signup = () => {
   return (
-    <div>
-      <div>
-        Login
-        <div>
-          <input type="email" />
-          <label htmlFor="">Your Email</label>
+    <div class="wrapper">
+      <form action="../page.js" method="post">
+        <h1>Login</h1>
+        <div class="input-box">
+          <input type="text" placeholder="Username" required />
+          <i class="bx bxs-user"></i>
         </div>
-        <div>
-          <input type="email" />
-          <label htmlFor="">Your Email</label>
+        <div class="input-box">
+          <input type="password" placeholder="Password" required />
+          <i class="bx bxs-lock-alt"></i>
         </div>
-        <div>
+        <div class="remember-forgot">
+          <label>
+            <input type="checkbox" />
+            Remember Me
+          </label>
+          <a href="#">Forgot Password</a>
+        </div>
+        <button type="submit" class="btn ">
+          Login
+        </button>
+        <div class="register-link">
           <div>
-            <input type="checkbox" name="" id="" />
-            <label htmlFor="Remember Me"></label>
+            Dont have an account? <script src="./Signup.js">Register</script>
           </div>
-          <span>Forget Password</span>
         </div>
-        <button type="Submit">Login</button>
-        <div>
-          <span>
-            New Here?<Link to="Register">Create an Account</Link>
-          </span>
-        </div>
-      </div>
+      </form>
     </div>
   );
 };
 
-export default signup;
+export default Signup;
