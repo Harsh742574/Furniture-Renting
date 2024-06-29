@@ -1,20 +1,22 @@
 import Image from "next/image";
 import ProductGallery from "./middlecom";
+import React from "react";
+import Signin from "./Component/Signin"; // Adjust the import path based on your project structure
 
-export default function Home() {
+function Page () {
   return (
     <div>
-      <div className="bg-white">
-        <header className="flex justify-between items-center py-6 px-8">
-          <div className="text-2xl font-bold text-yellow-500">S<span className="text-gray-900">tudio</span>.</div>
-          <nav className="flex space-x-4">
-            <a href="#" className="text-gray-600 hover:text-gray-900">Home</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">Products</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">Sales</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">Contact</a>
-          </nav>
-          <button className="bg-yellow-500 text-white px-4 py-2 rounded">Sign in</button>
-        </header>
+    <div className="bg-white">
+      <header className="flex justify-between items-center py-6 px-8">
+        <div className="text-2xl font-bold text-yellow-500">S<span className="text-gray-900">tudio</span>.</div>
+        <nav className="flex space-x-4">
+          <a href="#" className="text-gray-600 hover:text-gray-900">Home</a>
+          <a href="#" className="text-gray-600 hover:text-gray-900">Products</a>
+          <a href="#" className="text-gray-600 hover:text-gray-900">Sales</a>
+          <a href="#" className="text-gray-600 hover:text-gray-900">Contact</a>
+        </nav>
+        <button className="bg-yellow-500 text-white px-4 py-2 rounded" onclick= "< Signin/> ">Sign in</button>
+      </header>
 
         <main className="flex flex-col lg:flex-row items-center lg:justify-between py-16 px-8">
           <div className="lg:w-1/2">
@@ -59,3 +61,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Page;
