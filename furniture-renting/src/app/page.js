@@ -1,10 +1,21 @@
 import Image from "next/image";
+import CONTACT from "./components/contact"
+
 import ProductGallery from "./middlecom";
 import React from "react";
 import Signin from "./Component/Signin"; // Adjust the import path based on your project structure
 
+
+import { createBrowserRouter } from "react-router-dom";
+import Signup from "./Component/Signup";
+
+
 function Page () {
+
   return (
+    <div>
+    <CONTACT/>
+
     <div>
     <div className="bg-white">
       <header className="flex justify-between items-center py-6 px-8">
@@ -57,6 +68,7 @@ function Page () {
         <ProductGallery />
       </div>
     </div>
+</div>
   );
 }
 
