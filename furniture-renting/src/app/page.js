@@ -28,9 +28,7 @@ function Page () {
             </div>
             <div className="flex items-center mt-6">
               <div className="flex -space-x-2">
-                <img src="/Furniture-Renting/furniture-renting/src/app/us1.jpg" alt="User 2" className="w-10 h-10 rounded-full border-2 border-white" />
-                <img src="/path/to/user3.jpg" alt="User 3" className="w-10 h-10 rounded-full border-2 border-white" />
-                <img src="/path/to/user4.jpg" alt="User 4" className="w-10 h-10 rounded-full border-2 border-white" />
+                
               </div>
               <span className="ml-3 text-gray-600">Used by 300,000 people globally</span>
             </div>

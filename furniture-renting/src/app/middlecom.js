@@ -1,4 +1,8 @@
+
 import React from 'react';
+import Image from 'next/image';
+
+
 
 const ProductCard = ({ title, description, imageSrc, shopNowLink }) => {
   return (
@@ -16,37 +20,37 @@ const ProductGallery = () => {
     {
       title: 'Long Sofa',
       description: 'Structure almost highlights',
-      imageSrc: 'https://via.placeholder.com/300x200',
+      imageSrc:'image/pic1.jpg' ,
       shopNowLink: '/sofa',
     },
     {
       title: 'Dining Chair',
       description: 'Structure almost highlights',
-      imageSrc: 'https://via.placeholder.com/300x200',
+      imageSrc: 'image/pic2.jpg',
       shopNowLink: '/chair',
     },
     {
         title: 'Dining Chair',
         description: 'Structure almost highlights',
-        imageSrc: 'https://via.placeholder.com/300x200',
+        imageSrc: 'image/img5.jpg',
         shopNowLink: '/chair',
       },
       {
         title: 'Dining Chair',
         description: 'Structure almost highlights',
-        imageSrc: 'https://via.placeholder.com/300x200',
+        imageSrc: 'image/pic4.jpg',
         shopNowLink: '/chair',
       },
       {
       title: 'Dining Chair',
       description: 'Structure almost highlights',
-      imageSrc: 'https://via.placeholder.com/300x200',
+      imageSrc: 'image/pic5.jpg',
       shopNowLink: '/chair',
     },
     {
         title: 'Dining Chair',
         description: 'Structure almost highlights',
-        imageSrc: 'https://via.placeholder.com/300x200',
+        imageSrc: 'image/pic6.jpg',
         shopNowLink: '/chair',
       },
       
@@ -62,3 +66,10 @@ const ProductGallery = () => {
 };
 
 export default ProductGallery;
+
+
+
+
+
+
+
