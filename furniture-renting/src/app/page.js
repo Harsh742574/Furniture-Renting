@@ -1,9 +1,8 @@
 import Image from "next/image";
+import CONTACT from "./components/contact"
 
 export default function Home() {
   return (
-    <h1>
-      Hello World
-    </h1>
+    <CONTACT/>
   );
 }
