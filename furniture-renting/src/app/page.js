@@ -1,9 +1,12 @@
-import Image from "next/image";
+import React from "react";
+import Signin from "./Component/Signin"; // Adjust the import path based on your project structure
 
-export default function Home() {
+const Page = () => {
   return (
-    <h1>
-      Hello World
-    </h1>
+    <div>
+      <Signin />
+    </div>
   );
-}
+};
+
+export default Page;
