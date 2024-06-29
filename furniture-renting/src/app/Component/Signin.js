@@ -5,7 +5,7 @@ import "./Signin.css";
 const Signin = () => {
   return (
     <div class="wrapper">
-      <form action="">
+      <form action="POST">
         <h1>Login</h1>
         <div class="input-box">
           <input type="text" placeholder="Username" required />
@@ -27,7 +27,7 @@ const Signin = () => {
         </button>
         <div class="register-link">
           <p>
-            Dont have an account? <a href="#">Register</a>
+            Dont have an account?<a href=""> Register</a>
           </p>
         </div>
       </form>
