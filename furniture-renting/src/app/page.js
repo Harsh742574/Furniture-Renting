@@ -3,18 +3,17 @@ import CONTACT from "./components/contact"
 
 import ProductGallery from "./middlecom";
 import React from "react";
-import Signin from "./Component/Signin"; // Adjust the import path based on your project structure
+import Signin from "./components/Signin"; // Adjust the import path based on your project structure
 
 
 import { createBrowserRouter } from "react-router-dom";
-import Signup from "./Component/Signup";
+import Signup from "./components/Signup";
 
 
 function Page () {
 
   return (
     <div>
-    <CONTACT/>
 
     <div>
     <div className="bg-white">
@@ -24,7 +23,7 @@ function Page () {
           <a href="#" className="text-gray-600 hover:text-gray-900">Home</a>
           <a href="#" className="text-gray-600 hover:text-gray-900">Products</a>
           <a href="#" className="text-gray-600 hover:text-gray-900">Sales</a>
-          <a href="#" className="text-gray-600 hover:text-gray-900">Contact</a>
+          <a href="" className="text-gray-600 hover:text-gray-900">Contact</a>
         </nav>
         <button className="bg-yellow-500 text-white px-4 py-2 rounded" onclick= "< Signin/> ">Sign in</button>
       </header>
